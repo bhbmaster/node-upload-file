@@ -12,7 +12,7 @@ const data = fs.readFile("index.html", 'utf8', (err, data) => {
     //console.log(dt)
 
     const server = http.createServer((req,res) => {
-        console.log("request",req.method)
+        console.log("request",req.method,"from",req.url)
         if ( req.url == "/fileupload" && req.method == "POST") {
             //console.log("we uploading!")
             const form = new formidable.IncomingForm()
