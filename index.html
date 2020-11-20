@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Upload a File</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        * {
+            font-family: 'Goldman', cursive;
+        }
+        body {
+            background-color: gray;
+        }
+        #main {
+            border: 5px #aa11ff;
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            transform: translateY(30%);
+        }
+        .upbutton {
+            transform: translateY(30%);
+            transform: translateX(50%);
+        }
+    </style>
+    <body>
+        <div id="main">
+        <h1>Upload a file</h1>
+        <form  action="fileupload" method="POST" enctype="multipart/form-data">
+            <label for="filePath">Pick a file:</label>
+            <input type="file" class="form-control-file" name="filePath">
+            </input>
+            <br/>
+            <button class="btn btn-primary upbutton" type="submit">
+                Upload
+            </button>
+        </form>
+        </div>
+    </body>
+</html>
